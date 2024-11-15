@@ -1,0 +1,3 @@
+@echo off
+echo Starting FastAPI server...
+start /B python -m uvicorn main:app --reload > server.log 2>&1

@@ -8,14 +8,18 @@
 
 Для запуска скрипта необходимо установить следующие библиотеки Python:
 
-- `requests` — для выполнения HTTP-запросов
+- `requests` — для выполнения HTTP-запросов (для сохранения данных в CSV)
 - `BeautifulSoup4` — для парсинга HTML-кода
+- `aiohttp` — для выполнения асинхронных HTTP-запросов
+- `FastAPI` — для создания API-интерфейса для взаимодействия с сохранёнными данными
+- `SQLAlchemy` — для работы с базой данных
+- `asyncpg` — для подключения к PostgreSQL
 - `pandas` — для сохранения данных в CSV-файл
 
 Установка всех необходимых зависимостей:
 
 ```sh
-pip install requests beautifulsoup4 pandas
+pip install requests beautifulsoup4 pandas aiohttp "fastapi[standard]" sqlalchemy[asyncpg] asyncpg uvicorn
 ```
 
 ## Использование
