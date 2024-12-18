@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSocket Notifications</title>
+  </head>
+  <body>
+    <h1>WebSocket Notifications</h1>
+    <div id="notifications"></div>
+
+    <script>
+      const socket = new WebSocket("ws://localhost:8000/ws");
+
+      socket.onopen = function (event) {
+        console.log("WebSocket соединение установлено");
+      };
+
+      socket.onmessage = function (event) {
+        const notification = document.createElement("div");
+        notification.textContent = "Новое уведомление: " + event.data;
+        document.getElementById("notifications").appendChild(notification);
+      };
+
+      socket.onclose = function (event) {
+        console.log("WebSocket соединение потеряно");
+      };
+    </script>
+  </body>
+</html>
