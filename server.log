@@ -1,7 +1,7 @@
 INFO:     Will watch for changes in these directories: ['C:\\Users\\Алексей\\Desktop\\web api\\Api-practice-parser']
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [49448] using WatchFiles
-INFO:     Started server process [34208]
+INFO:     Started reloader process [21476] using WatchFiles
+INFO:     Started server process [9768]
 INFO:     Waiting for application startup.
 INFO:main:Начало асинхронного периодического парсинга...
 INFO:main:Начало парсинга...
@@ -11,127 +11,14 @@ INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-
 INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
 INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
 INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 157 товаров
 INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
-INFO:main:Начало парсинга...
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
-INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
-INFO:main:Product 1: Name = подставка под ель 350мм зеленый, Price = 489₽/шт.
-INFO:main:Product 2: Name = подставка под ель 390мм зеленый, Price = 879₽/шт.
-INFO:main:Product 3: Name = ветка новогодняя Еловая с пуансеттией 25см, Price = 115₽/шт.
-INFO:main:Получено 125 товаров
-INFO:main:Old products deleted from the database.
-INFO:main:Сохранено 125 товаров в базе данных
-INFO:main:Ожидание 10 секунд...
+INFO:main:Сохранено 157 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:     127.0.0.1:54024 - "GET /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54031 - "PUT /products/43672 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54037 - "GET /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54038 - "PUT /products/43673 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54038 - "PUT /products/43673 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54041 - "GET /products HTTP/1.1" 200 OK
