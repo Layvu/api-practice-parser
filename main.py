@@ -44,6 +44,10 @@ class SProductUpdate(BaseModel):
     name: Optional[str] = Field(None, description="Новое имя товара")
     price: Optional[str] = Field(None, description="Новая цена товара")
 
+class SProductCreate(BaseModel):
+    name: str = Field(..., description="Название товара")
+    price: str = Field(..., description="Цена товара")
+
 
 # Настройка асинхронного подключения к БД и сессии SQLAlchemy
 engine = create_async_engine(DATABASE_URL, echo=False)
@@ -221,6 +225,28 @@ async def delete_product(product_id: int):
         await session.commit()
         await manager.send_message(f"Товар с ID={product_id} был удалён")  # Уведомление
         return {"detail": "Товар удалён"}
+    
+@app.post("/products")
+async def create_product(new_product: SProductCreate):
+    async with async_session() as session:
+        # Запрос текущего максимального id
+        result = await session.execute(select(Product.id).order_by(Product.id.desc()).limit(1))
+        max_id = result.scalar() or 0
+        
+        product = Product(
+            id=max_id + 1,
+            name=new_product.name,
+            price=new_product.price
+        )
+        
+        session.add(product)
+        await session.commit()
+        
+        await manager.send_message(f"Добавлен новый товар с ID={product.id}") # Уведомление
+        
+        return {"detail": "Товар успешно добавлен", "product": product}
+
+
 
 # Запуск парсера
 @app.on_event("startup")
