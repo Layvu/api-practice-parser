@@ -19,9 +19,15 @@ INTERVAL = 500
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Инициализация FastAPI
+app = FastAPI()
+
+
+
 # Подключение к БД PostgreSQL
 DATABASE_URL = "postgresql+asyncpg://products_user:0000@localhost/products_db"
 Base = declarative_base()
+
 
 # Модель таблицы для товаров
 class Product(Base):
@@ -30,12 +36,20 @@ class Product(Base):
     name = Column(String, index=True)
     price = Column(String)
 
-# Настройка асинхронного движка и сессии
+# Модели для фильтрации и обновления данных
+class SUpdateFilter(BaseModel):
+    product_id: int  # Фильтр для поиска товара по id
+
+class SProductUpdate(BaseModel):
+    name: Optional[str] = Field(None, description="Новое имя товара")
+    price: Optional[str] = Field(None, description="Новая цена товара")
+
+
+# Настройка асинхронного подключения к БД и сессии SQLAlchemy
 engine = create_async_engine(DATABASE_URL, echo=False)
 async_session = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 
-# Инициализация FastAPI
-app = FastAPI()
+
 
 # Класс для управления подключениями WebSocket
 class WebSocketManager:
@@ -55,6 +69,8 @@ class WebSocketManager:
 
 # Инициализация менеджера WebSocket
 manager = WebSocketManager()
+
+
 
 # Асинхронный парсинг данных с сайта
 async def fetch_product_data(url):
@@ -98,6 +114,7 @@ async def fetch_product_data(url):
     logger.info(f"Получено {len(product_data)} товаров")
     return product_data
 
+
 # Запись данных в БД после её очистки
 async def save_products_to_db(products):
     async with async_session() as session:
@@ -118,6 +135,7 @@ async def save_products_to_db(products):
 # Асинхронный периодический парсинг и запись данных в БД
 async def periodic_parsing(interval: int = INTERVAL):
     start_url = f"https://www.maxidom.ru/catalog/{CATEGORY}/"
+
     while True:
         logger.info("Начало парсинга...")
         products = await fetch_product_data(start_url)
@@ -128,13 +146,7 @@ async def periodic_parsing(interval: int = INTERVAL):
         logger.info(f"Ожидание {interval} секунд...")
         await asyncio.sleep(interval)
 
-# Модели для фильтрации и обновления данных
-class SUpdateFilter(BaseModel):
-    product_id: int  # Фильтр для поиска товара по id
 
-class SProductUpdate(BaseModel):
-    name: Optional[str] = Field(None, description="Новое имя товара")
-    price: Optional[str] = Field(None, description="Новая цена товара")
 
 # Маршрут для получения всех товаров из БД
 @app.get("/products")
@@ -144,7 +156,7 @@ async def get_products():
         products = result.scalars().all()
         
         # Отправка уведомления через WebSocket
-        await manager.send_message("Запрос получен: Все товары успешно загружены из базы данных.")
+        await manager.send_message("Все товары успешно загружены из базы данных")
         
         return products
 
@@ -160,7 +172,7 @@ async def get_product(product_id: int):
             raise HTTPException(status_code=404, detail="Товар не найден")
         
         # Отправка уведомления через WebSocket
-        await manager.send_message(f"Запрос получен: Товар с ID={product_id} найден.")
+        await manager.send_message(f"Товар с ID={product_id} найден")
         
         return product
 
@@ -192,7 +204,7 @@ async def update_product(product_id: int, new_data: SProductUpdate):
         # Если обновления были, сохраняем изменения в БД
         if updated:
             await session.commit()
-            await manager.send_message(f"Товар с ID={product_id} был обновлен!")  # Уведомление
+            await manager.send_message(f"Товар с ID={product_id} был обновлен")  # Уведомление
 
         return product
 
@@ -207,7 +219,7 @@ async def delete_product(product_id: int):
 
         await session.delete(product)
         await session.commit()
-        await manager.send_message(f"Товар с ID={product_id} был удалён!")  # Уведомление
+        await manager.send_message(f"Товар с ID={product_id} был удалён")  # Уведомление
         return {"detail": "Товар удалён"}
 
 # Запуск парсера
@@ -222,9 +234,11 @@ async def websocket_endpoint(websocket: WebSocket):
     await manager.connect(websocket)
     try:
         while True:
-            # Ожидаем сообщения от клиента (для других целей, например, команд)
+            # Ожидаем сообщения от клиента
             data = await websocket.receive_text()
             logger.info(f"Получено от клиента: {data}")
     except WebSocketDisconnect:
         manager.disconnect(websocket)
         logger.info("Клиент отключился")
+
+# .\start.bat

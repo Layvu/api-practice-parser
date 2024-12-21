@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+}
+
+#notifications {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.notification {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
