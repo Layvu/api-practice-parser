@@ -1,0 +1,201 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Алексей\\Desktop\\web api\\Api-practice-parser']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [10936] using WatchFiles
+INFO:     Started server process [18368]
+INFO:     Waiting for application startup.
+INFO:main:Начало периодического парсинга
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51821 - "GET /products HTTP/1.1" 200 OK
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:     ('127.0.0.1', 51826) - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:main:Клиент отключился
+INFO:     connection closed
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:     ('127.0.0.1', 51828) - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:     127.0.0.1:51820 - "GET /products HTTP/1.1" 200 OK
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Клиент отключился
+INFO:     ('127.0.0.1', 51830) - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:     connection open
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:     127.0.0.1:51834 - "GET /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51835 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51835 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51841 - "POST /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51842 - "PUT /products/49451 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51849 - "GET /products/49451 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51850 - "POST /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51854 - "GET /products/49451 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51854 - "GET /products/49451 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51854 - "GET /products/49451 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51855 - "GET /products/49452 HTTP/1.1" 200 OK
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:     127.0.0.1:52475 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52475 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52475 - "GET /products/ HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52475 - "GET /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52476 - "GET /products/49451 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52486 - "POST /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52487 - "GET /products/49607 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52493 - "PUT /products/49607 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52493 - "GET /products/49607 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "DELETE /products/49607 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "GET /products/49607 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52497 - "GET /products/ HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52497 - "GET /products HTTP/1.1" 200 OK
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:     127.0.0.1:60044 - "GET /products HTTP/1.1" 200 OK
+INFO:main:Клиент отключился
+INFO:     connection closed
+INFO:     ('127.0.0.1', 60156) - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:main:Клиент отключился
+INFO:     ('127.0.0.1', 60159) - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60162 - "GET /products HTTP/1.1" 200 OK
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:     127.0.0.1:63777 - "GET /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63778 - "GET /products HTTP/1.1" 200 OK
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:     127.0.0.1:64147 - "POST /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64148 - "GET /products/50543 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64156 - "PUT /products/50543 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64156 - "GET /products/50543 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64157 - "DELETE /products/50543 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64157 - "GET /products/50543 HTTP/1.1" 404 Not Found
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:     127.0.0.1:61939 - "GET /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61940 - "POST /products HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61948 - "GET /products/51011 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61949 - "PUT /products/51011 HTTP/1.1" 200 OK
+INFO:main:Начало парсинга...
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/
+INFO:     127.0.0.1:61949 - "DELETE /products/51011 HTTP/1.1" 200 OK
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=2
+INFO:     127.0.0.1:61949 - "GET /products HTTP/1.1" 200 OK
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=3
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=4
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=5
+INFO:main:Данные с URL: https://www.maxidom.ru/catalog/elki-elovye-vetki-girlyandy/?amount=30&PAGEN_2=6
+INFO:main:Получено 156 товаров
+INFO:main:Старые товары удалены из БД
+INFO:main:Сохранено 156 товаров в базе данных
+INFO:main:Ожидание 500 секунд...
+INFO:main:Клиент отключился
+INFO:     connection closed

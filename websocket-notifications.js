@@ -10,7 +10,7 @@ socket.onopen = function () {
 
 // При получении нового уведомления
 socket.onmessage = function (event) {
-  const newNotification = "Новое уведомление: " + event.data;
+  const newNotification = "" + event.data;
 
   // Сохранение и отображение уведомления
   saveNotification(newNotification);
